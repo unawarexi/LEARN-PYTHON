@@ -16,18 +16,18 @@ lovely = """ i've decided to punch you
  i\'m tired of your bitchy ass """
 print(lovely)
 
-# ========================================================INTEGERS AND FLOATS"""
-# integers are a whole numbers
-# floats are decimals
-# casting is turning a string number into integer values
-#    e.g: var_name = int(same var_name)
-# """
 
 
-# ================================================================BOOLENs"""
-#  they're true or false values
+# ==============================  ALL TYPES OF DATATYPES IN PYTHON
 
-# """
-# ================================================================SEQUENCE"""
-#  they're true or false values
-# """
+""" 
+Text Type:	strings
+Numeric Types:	int, float, complex
+Sequence Types:	list, tuple, range
+Mapping Type:	dict
+Set Types:	set, frozenset
+Boolean Type:	bool
+Binary Types:	bytes, bytearray, memoryview
+None Type:	NoneType   
+
+"""
