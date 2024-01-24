@@ -41,3 +41,24 @@ def calculate_area(radius):
 - A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
 - Variable names are case-sensitive (age, Age and AGE are three different variables)
 - A variable name cannot be any of the Python keywords.
+
+
+## DATATYPES 
+
+- 1. Built-in Data Types
+
+Variables can store data of different types, and different types can do different things.
+
+Python has the following data types built-in by default, in these categories:
+
+- Text Type:	`str`
+- Numeric Types:	`int, float, complex`
+- Sequence Types:	`list, tuple, range`
+- Mapping Type:	`dict`
+- Set Types:	`set, frozenset`
+- Boolean Type:	`bool`
+- Binary Types:	`bytes, bytearray, memoryview`
+- None Type:	`NoneType`
+
+## METHODS 
+EVery data type comes with an in-built function in which you can manipulate 
