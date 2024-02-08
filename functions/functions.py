@@ -64,3 +64,6 @@ courses = ["arts", "science"] # this is a list
 info = {"name": "aurelia", "age": "40"} # this is a dict; contains keys and "{}"
 
 students_info(*courses, **info)
+
+
+
