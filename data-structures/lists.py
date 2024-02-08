@@ -16,6 +16,7 @@ andrew = ["man", 26, "tall", "6ft", "software engineer", ]
 # print out a particular value and ignore the rest without []
 
 print(andrew[-1])
+print(andrew[3])
 
 
 

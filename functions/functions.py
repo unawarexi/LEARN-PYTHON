@@ -4,8 +4,6 @@
 # we use the "def" to declare a python func.
 #  functions allow us to reuse code without repeating ourselves
 # 
-# 
-# 
 # """
 
 def hello_world():
@@ -26,6 +24,8 @@ the "hello" is the argument
 NOTE: A PARAM is like a placeholder in a function thatg recieves any argument passsed
 the greeting param is in a local scope ; meaning it's within a function not global
 """
+
+
 def magician(greeting):
     return "{} magician.".format(greeting)
 
