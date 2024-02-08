@@ -38,15 +38,37 @@ Here, name is a parameter, while "Alice" is an argument passed to the function g
 ```
 
 ## types of arguments
-- default 
-- positional
-- arbitrary (keyword arguments / variable lenghts) : args and kwargs
+- #### default 
+Default arguments have predefined values that are used when the function is called without providing a value for those arguments.
+```python
+def greet(name, message="Hello"):
+    print(f"{message}, {name}!")
+
+greet("Alice")  # Output: Hello, Alice!
+```
 
 
+- #### positional arguments
+   this arguments must always come before the keyword arguments
+   ```python
+   def greet(name, dept):
+    print(f"hi {name}")
+    print (f"are you a {dept} student?")
 
+   greet("jenny", dept="computer science") #jenny is positional without the "="
+  ```
 
+- #### keyword arguments:
+     ```python
+     def greet(name, message):
+       print(f"{message}, {name}!")
 
-## `*args` and `**kwargs`
+    greet(message="Hi", name="Bob")  # Output: Hi, Bob!
+    ```
+
+- #### arbitrary (variable lenghts) : args and kwargs
+
+#### `*args` and `**kwargs`
 Sometimes, you may need to work with functions that accept a variable number of arguments or keyword arguments. Python provides two special syntaxes for this purpose:
 
 - `*args`: Used to pass a variable number of `non-keyword` arguments to a function.
