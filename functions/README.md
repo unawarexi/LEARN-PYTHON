@@ -55,7 +55,7 @@ greet("Alice")  # Output: Hello, Alice!
     print(f"hi {name}")
     print (f"are you a {dept} student?")
 
-   greet("jenny", dept="computer science") #jenny is positional without the "="
+   greet("jenny", dept="computer-science") #jenny is positional without the "="
   ```
 
 - #### keyword arguments:
