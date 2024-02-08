@@ -37,6 +37,12 @@ greet("Alice")  # Output: Hello, Alice!
 Here, name is a parameter, while "Alice" is an argument passed to the function greet().
 ```
 
+## types of arguments
+- default 
+- positional
+- arbitrary (keyword arguments / variable lenghts) : args and kwargs
+
+
 
 
 
