@@ -41,9 +41,9 @@ for num in nums:
 
 
 """
-you can set an infinite loop to wait till it gets the desired result before breaking out
-to do this change the comparison to true; e.g
-while true:  # this would wait this whenever it gets 5 before executing
+ you can set an infinite loop to wait till it gets the desired result before breaking out
+ to do this change the comparison to true; e.g
+ while true:  # this would wait this whenever it gets 5 before executing
     if x == 5:
         break
     print (x)
