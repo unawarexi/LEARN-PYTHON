@@ -103,3 +103,86 @@ print("Data has been written to output.csv")
 - Reading and Writing with Dictionaries: Python's csv.DictReader and csv.DictWriter classes allow you to read and write CSV files using dictionaries, which can be more convenient when dealing with labeled data.
 - Custom Delimiters and Quote Characters: The csv.reader and csv.writer classes support custom delimiters and quote characters, allowing you to work with CSV files that use different separators and quoting conventions.
 
+
+
+# Working with JSON in Python
+
+- JSON (JavaScript Object Notation) is a lightweight data-interchange format commonly used for exchanging data between a server and a web application. 
+- Python provides built-in support for working with JSON through the `json` module, making it easy to `serialize/deserialize` Python objects to/from JSON format.
+
+### Serializing Python Objects to JSON
+
+To serialize Python objects (such as dictionaries, lists, or custom objects) into JSON format, you can use the `json.dumps()` function. Here's an example:
+
+```python
+import json
+
+# Python dictionary to serialize to JSON
+data = {
+    'name': 'John',
+    'age': 30,
+    'city': 'New York'
+}
+
+# Serialize the dictionary to JSON format
+json_data = json.dumps(data)
+
+print(json_data)
+
+Output:
+
+json
+{"name": "John", "age": 30, "city": "New York"}
+```
+
+### Deserializing JSON to Python Objects
+To deserialize JSON data into Python objects, you can use the `json.loads()` function. Here's how you can deserialize JSON data into a Python dictionary:
+
+```python
+import json
+
+# JSON data to deserialize
+json_data = '{"name": "Alice", "age": 25, "city": "Los Angeles"}'
+
+# Deserialize JSON data to a Python dictionary
+data = json.loads(json_data)
+
+print(data)
+Output:
+
+{'name': 'Alice', 'age': 25, 'city': 'Los Angeles'}
+```
+
+
+### Reading and Writing JSON Files
+Python also provides functions for reading from and writing to JSON files using the json.dump() and json.load() functions. Here's an example:
+
+```python
+import json
+
+# Python dictionary to write to a JSON file
+data = {
+    'name': 'Bob',
+    'age': 35,
+    'city': 'Chicago'
+}
+
+# Write data to a JSON file
+with open('data.json', 'w') as file:
+    json.dump(data, file)
+
+# Read data from the JSON file
+with open('data.json', 'r') as file:
+    loaded_data = json.load(file)
+
+print(loaded_data)
+Output:
+
+{'name': 'Bob', 'age': 35, 'city': 'Chicago'}
+```
+### Additional Features
+- Working with Nested Data: JSON supports nested data structures, allowing you to represent complex hierarchical data.
+
+- Custom Serialization and Deserialization: The json.dumps() and json.loads() functions provide options for custom serialization and deserialization using the default and object_hook parameters, respectively.
+
+- JSON Schema Validation: Python libraries such as jsonschema provide functionality for validating JSON data against a defined schema.
