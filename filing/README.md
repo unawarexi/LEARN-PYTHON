@@ -186,3 +186,43 @@ Output:
 - Custom Serialization and Deserialization: The json.dumps() and json.loads() functions provide options for custom serialization and deserialization using the default and object_hook parameters, respectively.
 
 - JSON Schema Validation: Python libraries such as jsonschema provide functionality for validating JSON data against a defined schema.
+
+
+# Regular Expressions (Regex) 
+
+Regular expressions (regex) are powerful tools for pattern matching and text manipulation. In Python, you can use the `re` module to work with regular expressions. This README provides a detailed guide on using regex in Python.
+
+## Introduction to Regular Expressions
+
+- Regular expressions are sequences of characters that define a search pattern. 
+- They are useful for searching, validating, and manipulating text strings. 
+- In Python, you can use the `re` module to work with regular expressions.
+
+### Basic Patterns
+
+- **Literal Characters:** Matches the characters exactly as specified.
+- **Character Classes:** Matches any one of a set of characters.
+- **Anchors:** Specifies the position of a match in a string.
+- **Quantifiers:** Specifies the number of occurrences of a character.
+- **Grouping Constructs:** Groups multiple tokens together and creates a single entity.
+
+### Using the re Module
+
+To use regular expressions in Python, you need to import the `re` module:
+
+```python
+import re
+```
+
+#### uses of Basic Patterns in Regular Expressions (Regex)
+
+| Pattern            | Description                                                                  | Example             | Matches                                                      |
+|--------------------|------------------------------------------------------------------------------|---------------------|--------------------------------------------------------------|
+| Literal Characters | Matches the characters exactly as specified.                                | `pattern = 'cat'`   | 'cat' in 'catch', 'cats', 'concatenate'                      |
+| Character Classes  | Matches any one of a set of characters.                                      | `pattern = '[aeiou]'` | 'a' in 'cat', 'e' in 'best', 'i' in 'sit'                  |
+| Anchors            | Specifies the position of a match in a string.                               | `pattern = '^start'`| 'start' at the beginning of a string                         |
+| Quantifiers        | Specifies the number of occurrences of a character.                           | `pattern = 'a{2,4}'`| 'aa', 'aaa', or 'aaaa'                                       |
+| Grouping Constructs| Groups multiple tokens together and creates a single entity.                  | `pattern = '(abc)+'`| 'abc', 'abcabc', 'abcabcabc', etc.                          |
+
+Each pattern has its specific purpose in matching strings based on certain criteria. Understanding these basic patterns is fundamental in effectively using regular expressions for text processing and pattern matching tasks.
+
